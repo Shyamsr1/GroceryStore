@@ -1,0 +1,114 @@
+[
+    {
+        "Serialnumber": "C11" , 
+        "Name" : "Rice" , 
+        "Quantity" : 25, 
+        "units" : "Kilos", 
+        "Department" : "Cooking", 
+        "Notes": "Doppi"
+    },
+    {
+        "Serialnumber": "C12" , 
+        "Name" : "Gingely Oil" , 
+        "Quantity" : 2, 
+        "units" : "Litres", 
+        "Department" : "Cooking", 
+        "Notes": "Organic"
+    },
+    {
+        "Serialnumber": "V11" , 
+        "Name" : "Tomato" , 
+        "Quantity" : 5, 
+        "units" : "Kilos", 
+        "Department" : "Veg", 
+        "Notes": "Bangalore Tomato"
+    },
+    {
+        "Serialnumber": "V12" , 
+        "Name" : "Ginger" , 
+        "Quantity" : 2, 
+        "units" : "Kilos", 
+        "Department" : "Veg", 
+        "Notes": "Organic"
+    },
+    {
+        "Serialnumber": "B11" , 
+        "Name" : "Tea" , 
+        "Quantity" : 500, 
+        "units" : "Grams", 
+        "Department" : "Beverages", 
+        "Notes": "Green Label"
+    },
+    {
+        "Serialnumber": "B12" , 
+        "Name" : "Coffee" , 
+        "Quantity" : 250, 
+        "units" : "Grams", 
+        "Department" : "Beverages", 
+        "Notes": "Levista"
+    },
+    {
+        "Serialnumber": "Bak11" , 
+        "Name" : "Bread" , 
+        "Quantity" : 3, 
+        "units" : "Packets/Loafs", 
+        "Department" : "Bakery", 
+        "Notes": "Whole Wheat"
+    },
+    {
+        "Serialnumber": "Bak12" , 
+        "Name" : "Cookies" , 
+        "Quantity" : 10, 
+        "units" : "Packets", 
+        "Department" : "Bakery", 
+        "Notes": "Multigrain"
+    },
+    {
+        "Serialnumber": "Be11" , 
+        "Name" : "Soap" , 
+        "Quantity" : 10, 
+        "units" : "Packets", 
+        "Department" : "Beauty", 
+        "Notes": "Mysor Sandal Soap Big packet"
+    },
+    {
+        "Serialnumber": "Be12" , 
+        "Name" : "Shampoo" , 
+        "Quantity" : 10, 
+        "units" : "Bottle", 
+        "Department" : "Beauty", 
+        "Notes": "Pantene"
+    },
+    {
+        "Serialnumber": "H11" , 
+        "Name" : "Sanitizers" , 
+        "Quantity" : 20, 
+        "units" : "Bottles", 
+        "Department" : "Home", 
+        "Notes": "Dettol Big Bottle"
+    },
+    {
+        "Serialnumber": "H12" , 
+        "Name" : "Room Freshner" , 
+        "Quantity" : 10, 
+        "units" : "Bottles", 
+        "Department" : "Home", 
+        "Notes": "AmbiPure Big" 
+    },
+    {
+        "Serialnumber": "C11" , 
+        "Name" : "Detergent" , 
+        "Quantity" : 20, 
+        "units" : "Packets", 
+        "Department" : "Cleaning", 
+        "Notes": "Ariel Big"
+    },
+    {
+        "Serialnumber": "C12" , 
+        "Name" : "Floor Cleaner" , 
+        "Quantity" : 10, 
+        "units" : "Bottles", 
+        "Department" : "Cleaning", 
+        "Notes": "Lizol Big" 
+    }
+]

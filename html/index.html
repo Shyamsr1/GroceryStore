@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grocery List</title>
+
+    <!-- CSS only -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/styles.css"/>
+  </head>
+  <body>
+    <header>
+      <h1 class="glow">Grocery List</h1>
+    </header>
+
+    <main>
+      <!-- flip card content -->
+      <h4 style="margin-top: 50px; color: red;">
+        Please Note: Hover over the image below to add the Grocery Items and after add, the table will be visible with updated values:
+      </h4>
+      <br />
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              src="/ShoppingCart.jpeg"
+              alt="ShoppingCart"
+              style="width: 200px; height: 200px;"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h2>Wish To Add Grocery Store Item</h2>
+            <br />
+            <p>Please click on the Button below</p>
+            <button data-toggle="#addItem" type="button" id="addItems">
+              Add Items
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Table section -->
+
+      <div
+        style="overflow-x: auto; height: auto;"
+        id="tableContainer"
+        
+      >
+        <table id="groceryListTable" 
+        class="table-responsive"
+        style="padding-top: 90px; height: auto;"
+        >
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Serialnumber</th>
+              <th>Name</th>
+              <th>Quantity</th>
+              <th>units</th>
+              <th>Department</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <!-- The Modal -->
+      <div id="addItem" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content" style="background-color: burlywood;">
+          <span class="close">&times;</span>
+          <!-- <p>Some text in the Modal..</p> -->
+          <form id="addItemForm">
+            <div class="modalbody">
+              <ul>
+                <li>Click "Add Item" button to add the next item and close the dialog box after completing the process to view the table.</li>
+               
+              </ul>
+            </div>
+            <div class="margin row" style="margin-left: 10px; padding-top: 20px;">
+              <label for="addItem_Serialnumber"> Serial number </label>
+              <div class="formcontrols col-md4" style="padding-left: 230px">
+                <input
+                  type="text"
+                  id="addItem_Serialnumber"
+                  placeholder="Enter the Serial number"
+                  style="width: 500px;"
+                />
+              </div>
+            </div>
+            <div class="margin row" style="margin-left: 10px;padding-top: 20px;">
+              <label for="addItem_Name"> Name </label>
+              <div class="formcontrols" style="padding-left: 280px;">
+                <input
+                  type="text"
+                  id="addItem_Name"
+                  placeholder="Enter the Product Name"
+                  style="width: 500px;"
+                />
+              </div>
+            </div>
+            <div class="margin row" style="margin-left: 10px; padding-top: 20px;">
+              <label for="addItem_Quantity"> Quantity </label>
+              <div class="formcontrols" style="padding-left: 250px;">
+                <input
+                  type="number"
+                  id="addItem_Quantity"
+                  placeholder="Enter the Quantity"
+                  style="width: 500px;"
+                />
+              </div>
+            </div>
+            <div class="margin row" style="margin-left: 10px;padding-top: 20px;">
+              <label for="addItem_units"> units </label>
+              <div class="formcontrols" style="padding-left: 280px;">
+                <select class="select" name="select" id="addItem_units" style="width: 500px" >
+                  <option>Grams</option>
+                  <option>Kilograms</option>
+                  <option>Litres</option>
+                  <option>Packets / Bottles</option>
+                </select>
+              </div>
+            </div>
+            <div class="margin row" style="margin-left: 10px;padding-top: 20px;">
+              <label for="addItem_Department"> Department </label>
+              <div class="formcontrols" style="padding-left: 220px;">
+                <select class="select" name="select" id="addItem_Department" style="width: 500px;">
+                  <option>Vegetables</option>
+                  <option>Beverages</option>
+                  <option>Cooking</option>
+                  <option>Bakery</option>
+                  <option>Beauty</option>
+                  <option>Home</option>
+                  <option>Cleaning</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="margin row" style="margin-left: 10px;padding-top: 20px;">
+              <label for="addItem_Notes">
+                Brand Name / Other Specifications
+              </label>
+              <div class="formcontrols" style="padding-left: 50px;">
+                <input
+                  type="text"
+                  id="addItem_Notes"
+                  style="width: 500px;"
+                  placeholder="Enter Specifications or Brand Name"
+                />
+              </div>
+            </div>
+
+            <div>
+              <button type="submit" id="saveItem" class="btn btn-primary oldNewItems">
+                Add
+              </button>
+             
+            </div>
+          </form>
+        </div>
+      </div>
+
+
+    </main>
+
+    <footer>
+      <p>Practise Exercise completed by Shyam SR</p>
+    </footer>
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
